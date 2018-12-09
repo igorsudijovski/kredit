@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/tether.min.css" />
+    <link rel="stylesheet" href="css/tether-theme-basic.min.css" />
+    <link rel="stylesheet" href="css/tether-theme-arrows-dark.min.css" />
+    <link rel="stylesheet" href="css/tether-theme-arrows.min.css" />
+    <link rel="stylesheet" href="css/calculation.css" />
+</head>
+<body>
+<div class="row">
+    <div class="col-md-3">
+        <button id="button-add" class="btn btn-success btn-margin"> Add </button>
+    </div>
+    <div class="col-md-3">
+        <div class="input-group">
+            <input id="loan" type="text" class="form-control" placeholder="Loan" value="75000" />
+            <span class="input-group-addon">&euro;</span>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <select id="banks" class="form-control input-group">
+        </select>
+    </div>
+    <div class="col-md-12 payment-group" id="monthly-payments">
+        <div class="form-group">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control monthly-payment" data-index="1" placeholder="Monthly payment" value="450" />
+                    <span class="input-group-addon">&euro;</span>
+                </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control number-years" data-index="1" placeholder="Number of years" value="3" />
+                    <span class="input-group-addon">Years</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="delete-row btn btn-danger">Remove</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control monthly-payment" data-index="2" placeholder="Monthly payment" value="500" />
+                    <span class="input-group-addon">&euro;</span>
+                </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control number-years" data-index="2" placeholder="Number of years" value="3" />
+                    <span class="input-group-addon">Years</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="delete-row btn btn-danger">Remove</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control monthly-payment" data-index="3" placeholder="Monthly payment" value="600" />
+                    <span class="input-group-addon">&euro;</span>
+                </div>
+            </div>
+            <div class=" col-md-4">
+                <div class="input-group">
+                    <input type="text" class="form-control number-years" data-index="3" placeholder="Number of years" value="3" />
+                    <span class="input-group-addon">Years</span>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="delete-row btn btn-danger">Remove</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 payment-group">
+        <div class="form-group">
+            <div class="col-md-6">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Interest</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bank-interest-rate"></tbody>
+                </table>
+            </div>
+            <div class="col-md-4">
+                <div class="input-group">
+                    <input id="bank-interest" type="text" class="form-control" placeholder="Bank Interest" value="" />
+                    <span class="input-group-addon">%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <button id="button-calculate" class="btn btn-success"> Calculate </button>
+    </div>
+</div>
+<div id="showed-data">
+</div>
+
+<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="js/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/d3.min.js"></script>
+<script type="text/javascript" src="js/d3.tip.v0.6.3.js"></script>
+<script type="text/javascript" src="js/calculation.js"></script>
+<script type="text/javascript" src="js/tedi.js"></script>
+</body>
+</html>

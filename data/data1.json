@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Stopanska banka",
+    "ucestvo" : 0.25,
+    "kamati": [
+      {"kamata": 3.6, "godini": 3},
+      {"kamata": 3.9, "godini": 2},
+      {"kamata": 6.53, "godini": 50}
+    ]
+  },
+  {
+    "name": "NLB",
+    "ucestvo" : 0.3,
+    "kamati": [
+      {"kamata": 3.8, "godini": 3},
+      {"kamata": 4.8, "godini": 2},
+      {"kamata": 6, "godini": 50}
+    ]
+  },
+  {
+    "name": "test1-Stopanska banka",
+    "ucestvo" : 0.2,
+    "kamati": [
+      {"kamata": 4.3, "godini": 3},
+      {"kamata": 4.6, "godini": 2},
+      {"kamata": 6.53, "godini": 50}
+    ]
+  }
+]
